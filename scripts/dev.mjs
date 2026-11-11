@@ -58,7 +58,7 @@ function schedule(path) {
     path &&
     String(path)
       .split(/[\\/]/)
-      .some((p) => p === 'generated' || p.endsWith('.meta'))
+      .some((p) => p === 'generated' || p.endsWith('.meta') || /\.timestamp-.*\.mjs$/.test(p))
   )
     return;
   clearTimeout(debounce);
