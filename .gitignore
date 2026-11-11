@@ -1,0 +1,15 @@
+node_modules
+dist/
+public/animations/
+public/handout/
+.cache/
+*.log
+motion/generated/
+.sites-runtime/
+.openai/
+.env
+.env.*
+!.env.example
+
+# Temporary Vite configuration bundles
+*.timestamp-*.mjs
